@@ -31,12 +31,10 @@ public class Transacao {
 
     private String descricao;
 
-
     // GETTERS E SETTERS
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
@@ -44,7 +42,6 @@ public class Transacao {
     public Long getContaOrigemId() {
         return contaOrigemId;
     }
-
     public void setContaOrigemId(Long contaOrigemId) {
         this.contaOrigemId = contaOrigemId;
     }
@@ -52,7 +49,6 @@ public class Transacao {
     public Integer getTipoTransacaoId() {
         return tipoTransacaoId;
     }
-
     public void setTipoTransacaoId(Integer tipoTransacaoId) {
         this.tipoTransacaoId = tipoTransacaoId;
     }
@@ -60,7 +56,6 @@ public class Transacao {
     public Double getValor() {
         return valor;
     }
-
     public void setValor(Double valor) {
         this.valor = valor;
     }
@@ -68,7 +63,6 @@ public class Transacao {
     public LocalDateTime getDataHora() {
         return dataHora;
     }
-
     public void setDataHora(LocalDateTime dataHora) {
         this.dataHora = dataHora;
     }
@@ -76,7 +70,6 @@ public class Transacao {
     public String getDescricao() {
         return descricao;
     }
-
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
