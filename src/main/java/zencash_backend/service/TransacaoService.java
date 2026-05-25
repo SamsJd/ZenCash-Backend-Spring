@@ -15,7 +15,7 @@ public class TransacaoService {
 
     // LISTAR TODAS
     public List<Transacao> listarTodas() {
-        return repository.findAll();
+        return repository.findAllByOrderByIdAsc();
     }
 
     // BUSCAR POR ID
