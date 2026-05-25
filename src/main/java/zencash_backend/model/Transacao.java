@@ -1,6 +1,7 @@
 package zencash_backend.model;
 
 import jakarta.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
@@ -23,18 +24,19 @@ public class Transacao {
     @Column(name = "tipo_transacao_id")
     private Integer tipoTransacaoId;
 
-    @Column(nullable = false)
-    private Double valor;
+    @Column(name = "valor", nullable = false, precision = 18, scale = 2)
+    private BigDecimal valor;
 
     @Column(name = "data_hora")
     private LocalDateTime dataHora;
 
+    @Column(name = "descricao")
     private String descricao;
 
-    // GETTERS E SETTERS
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -42,6 +44,7 @@ public class Transacao {
     public Long getContaOrigemId() {
         return contaOrigemId;
     }
+
     public void setContaOrigemId(Long contaOrigemId) {
         this.contaOrigemId = contaOrigemId;
     }
@@ -49,20 +52,23 @@ public class Transacao {
     public Integer getTipoTransacaoId() {
         return tipoTransacaoId;
     }
+
     public void setTipoTransacaoId(Integer tipoTransacaoId) {
         this.tipoTransacaoId = tipoTransacaoId;
     }
 
-    public Double getValor() {
+    public BigDecimal getValor() {
         return valor;
     }
-    public void setValor(Double valor) {
+
+    public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
 
     public LocalDateTime getDataHora() {
         return dataHora;
     }
+
     public void setDataHora(LocalDateTime dataHora) {
         this.dataHora = dataHora;
     }
@@ -70,6 +76,7 @@ public class Transacao {
     public String getDescricao() {
         return descricao;
     }
+
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
