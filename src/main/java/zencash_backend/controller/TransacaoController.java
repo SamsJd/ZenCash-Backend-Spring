@@ -8,6 +8,7 @@ import zencash_backend.service.TransacaoService;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/transacoes")
 public class TransacaoController {

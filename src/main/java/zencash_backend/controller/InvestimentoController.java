@@ -8,6 +8,7 @@ import zencash_backend.service.InvestimentoService;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/investimentos")
 public class InvestimentoController {
